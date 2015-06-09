@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 
 <meta charset="utf-8">
-<title>Web Components</title>
+<title>Web Tools</title>
 
 <section>
-    <h1>Web Component: the future is now</h1>
+    <h1>Web Tools</h1>
+    <h5>How could be more efficient ?</h5>
 </section>
 
 <section>
@@ -14,287 +15,58 @@
 </section>
 
 <section>
-    <p>I have 40 minutes to cover the entire futur web platform :(</p>
-</section>
-
-<section>
-    <h3>At the start of the web, we had tags...</h3>
+    <h3>Agenda</h3>
     <ul class="incremental">
-      <li>div
-      <li>span
-      <li>form
+      <li>Development
+      <li>Build
+      <li>Debuging
     </ul>
-    <h3>we didn't need much more to build our pages</h3>
 </section>
 
 <section>
-    <h4>Not very easy to read</h4>
-    <div class="not-easy-to-understand"></div>
-</section>
-
-<section>
-    <h3>HTML5 improvments</h3>
+    <header>
+    	<h4>Development tools</h4>
+    	<h5>Development</h5>
+    </header>
     <ul class="incremental">
-      <li>Menu
-      <li>footer
-      <li>header
+      <li>SASS / LESS
+      <li>Npm
+      <li>Bower
+      <li>Grunt
+      <li>Gulp
+      <li>require
     </ul>
 </section>
 
 <section>
-    <h3>and much more</h3>
+    <header>
+    	<h4>Development tools</h4>
+    	<h5>Build</h5>
+    </header>
     <ul class="incremental">
-      <li>video
-      <li>audio
+      <li>browserify
+      <li>gulp
+      <li>Grunt
+      <li>Jenkins
     </ul>
-    <h4>what is that ?????</h4>
 </section>
 
 <section>
-    <h4>Video tag</h4>
-    <h5>What we can see</h5>
-    <p class="video-tag"></p>
-</section>
-
-<section>
-    <h4>Video tag</h4>
-    <h5>Definition</h5>
-    <pre><video src="video-tag-definition"></video></pre>
-</section>
-
-<section>
-    <h4>Audio tag</h4>
-    <h5>What we can see</h5>
-    <div class="audio-tag"></div>
-</section>
-
-<section>
-    <h4>Audio tag</h4>
-    <h5>Definition</h5>
-    <div class="audio-tag-definition"></div>
-</section>
-
-
-
-<section>
-    <h3>It's a web component !</h3>
-</section>
-
-<section>
-    <h3>What is a web component ?</h3>
-    <h4>A set of technologies to build encapsulated, reusable, composable widgets for the web</h4>
-    <h4>No 3rd party, only JS, CSS, HTML.</h4>
-</section>
-
-<section>
-    <h3>Black boxes</h3>
-</section>
-
-<section>
-    <h3>Why build custom Elements ?</h3>
-</section>
-
-<section>
-    <h3>Benefits</h3>
+    <header>
+    	<h4>Development tools</h4>
+    	<h5>Debug</h5>
+    </header>
     <ul class="incremental">
-      <li>Encapsulation
-      <li>Reusability
-      <li>Robustness
-      <li>Expressiveness
+      <li>Elements panel
+      <li>Network panel
+      <li>Source panel
+      <li>Timeline panel
+      <li>Profiles panel
+      <li>Ressources panel
+      <li>Audit panel
+      <li>Console panel
+      <li>Emulator
     </ul>
-</section>
-
-<section>
-    <h3>Technologies</h3>
-    <ul class="incremental">
-      <li>HTML Imports
-      <li>Shadow DOM
-      <li>HTML Templates
-      <li>Custom ELements
-    </ul>
-</section>
-
-<section>
-    <h3>Key players</h3>
-    <ul>
-      <li class="selected">HTML Imports
-      <li>Shadow DOM
-      <li>HTML Templates
-      <li>Custom ELements
-    </ul>
-</section>
-
-<section>
-    <h3>HTML Imports</h3>
-    <h4>Load custom elements and decorators from externals files using the link tag:</h4>
-    <pre><link rel="import" href="my-custom-component.html"></pre>
-</section>
-
-<section>
-    <h3>HTML Imports</h3>
-    How to use it ?
-</section>
-
-<section>
-    <h3>Shadow DOM</h3>
-    <h4>Load custom elements and decorators from externals files using the link tag:</h4>
-</section>
-
-<section>
-    <h3>HTML Template</h3>
-    <h4>Not a new concept !</h4>
-    <h5>Yesturday</h5>
-    <pre>
-      <div id="mytemplate" hidden>
-        <img src="logo.png">
-        <div class="comment"></div>
-      </div>
-    </pre>
-    <ul>
-      <li class="selected">Ressources are still loaded
-      <li>style and theming is painful
-    </ul>
-</section>
-
-
-<section>
-    <h3>HTML Template</h3>
-    <h5>Now</h5>
-    <h5>Contains inert chunks of markup intended to be used later:</h5>
-    <pre>
-        <template id="mytemplate">
-          <img src=""> <!-- dynamically populate at runtime -->
-          <div class="comment"></div>
-        </template>
-    </pre>
-    <h5>Parsed but not rendered (Scripts not run, images and styleshettes not loaded, madia not played)</h5>
-    <h5><pre>Hidden from document (document.querySelector("#myTemplate .comment'")) == null;</pre><h5>
-</section>
-
-<section>
-    <h3>HTML Template</h3>
-    <h4>How to use them ?</h4>
-    <ul>
-      <li class="selected">Template.content (document fragment)
-      <li>template.innerHTML
-    </ul>    
-    <pre>
-        <template id="mytemplate">
-          <img src="">
-          <div class="comment"></div>
-        </template>
-        <script>
-          var t = document.querySelector('#mytemplate');
-          t.content.querySelector('img').src = 'logo.png'; // Populate the src at runtime.
-          document.body.appendChild(t.content.cloneNode(true));
-        </script>
-    </pre>
-</section>
-
-<section>
-      <h3>HTML Template</h3>
-      <h4>demo</h4>
-</section>
-
-<section>
-      <h3>Shadow dom</h3>
-      <p>Shadow DOM gives us markup encapsulation, style boundaries, and exposes (to web developers) the same mechanics browsers vendors have been using to implement their internal UI.</p>
-      <h5>Eric Bidelman (Google dev)</h5>
-</section>
-
-<section>
-      <h3>Shadow dom</h3>
-      <h4>Encapsulation !</h4>
-      <ul class="incremental">
-        <li>Fondamentation foundation of OOP
-        <li>Separate code you wrote from the code that will consume it
-        <li>We don't have it on the web
-      </ul>
-</section>
-
-<section>
-      <h3>Shadow dom</h3>
-      <h4>Basics</h4>
-      <h5>DOM nodes can already "host" hidden DOM</h5>
-      <h5>The hidden DOM can't be accessed from outside JS</h5>
-      <input type="date">
-      <input type="time">
-      <h5>video, audio...</h5>
-      <ul class="incremental">
-        <li>Yes it's already in the web since a long time
-      </ul>
-</section>
-
-<section>
-      <h3>Shadow dom</h3>
-      <h5>How to use them ?</h5>
-      DEMO !
-</section>
-
-<section>
-      <h3>Shadow DOM</h3>
-      <h4>Style encapsulation</h4>
-      <ul class="incremental">
-        <li>Styles defined in Shadow DOM are scoped by default
-        <li>Page's styles don't bleed across the shadow boundary (unless we let them)
-        <li>.resetStyleInheritance
-        <li>.applyAuthorStyles
-      </ul>
-</section>
-
-<section>
-      <h3>Custom Element</h3>
-      <h5>Definition</h5>
-      <h5>HTMLElement until registered</h5>
-      <h5>Lifecycle callbacks give insight to element's life</h5>
-</section>
-
-<section>
-      <h3>Custom Element</h3>
-      <h4>Example</h4>
-</section>
-
-<section>
-      <h3>Custom Element</h3>
-      <h4>Registration</h4>
-</section>
-
-<section>
-      <h3>Custom Element</h3>
-      <h5>Extending existing HTML Element</h5>
-</section>
-
-<section>
-      <h3>Custom Element</h3>
-      <h4>How to use it ?</h4>
-      <h5>after registration, use it like any DOM element</h5>
-      <pre><tabs></tabs></pre>
-      <h5>in JS</h5>
-      <pre>document.createElement('tabs')</pre>
-</section>
-
-<section>
-      <h3>Reusing components</h3>
-</section>
-
-<section>
-      <h3>Reusing components</h3>
-</section>
-
-<section>
-      <h3>Can I use web components now ?</h3>
-</section>
-
-<section>
-      <h3>Exemple ?</h3>
-</section>
-
-<section>
-      <h3>Ressources</h3>
-</section>
-
-<section>
-      <h3>FIN</h3>
 </section>
 
 <!-- Your Style -->
