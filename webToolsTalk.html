@@ -23,6 +23,7 @@
     </ul>
 </section>
 
+<!-- During the dev phase -->
 <section>
     <header>
     	<h4>Development tools</h4>
@@ -39,6 +40,79 @@
     </ul>
 </section>
 
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>During the development phase - NPM</h5>
+    </header>
+    <ul class="incremental">
+      <li>Package Manager for Javascript
+      <li>Can manage dependencies and versions
+      <li>ships with node.js
+      <li>Makes it easy for JavaScript developers to share and reuse code
+      <li>Makes it easy to update the code that you're sharing
+    </ul>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>During the development phase - NPM</h5>
+    </header>
+    <h4>package.json
+    <div class="scrollable">
+      <img src="images/packagejson-image.png" alt="package.json"/>
+      <div class="comments">
+          <ul class="incremental">
+            <li>Name: The unique name of your package. Required
+            <li>Scripts: A object which exposes addition npm commands. The object assumes that the key is the npm command and the value is the script path
+            <li>Main: The main entry point to your package. When calling require('{module name}')
+            <li>Dependencies: An object which contain the dependencies of your package
+            <li>devDependencies: These are the dependencies that are only intended for development and testing of your module
+            <li>preferGlobal: A property that indicates that this page prefers to be installed globally using npm install -g {module-name}
+          </ul>
+      </div>
+    </div>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>During the development phase - NPM</h5>
+    </header>
+    <h4>package.json dependencies
+    <ul class="incremental">
+        <li>version Must match version exactly
+        <li>>version Must be greater than version
+        <li>>=version etc
+        <li><version
+        <li><=version
+        <li>~version "Approximately equivalent to version"
+        <li>^version "Compatible with version"
+    </ul>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>During the development phase - NPM</h5>
+    </header>
+    <h4>How to use it ?
+    <ul class="incremental">
+      <li>Init
+          <pre>npm install</pre>
+          <div>This will ask you a bunch of questions, and then write a package.json for you.</div>
+      </li>
+      <li>Install package locally
+            <pre>npm install PACKAGE_NAME</pre>
+      </li>        
+      <li>Install package locally and save it
+            <pre>npm -save install <PACKAGE_NAME></pre>
+      </li>    
+    </ul>
+</section>
+
+<!-- During the build phase -->
 <section>
     <header>
     	<h4>Development tools</h4>
@@ -212,6 +286,28 @@
     height: 2px;
     background: red;
     z-index: 1000;
+  }
+
+  .scrollable {
+      height: 450px;
+      overflow-y: auto;
+  }
+
+  .scrollable  img {
+      width: calc(100% - 300px);
+      float: left;
+  }
+
+  .scrollable  .comments {
+      width: 300px;
+      display: inline-block;
+      height: 100%;
+      font-size: 1.2rem;
+  }
+
+  .scrollable  .comments ul {
+      margin: 2rem;
+      padding: 0;
   }
 </style>
 
