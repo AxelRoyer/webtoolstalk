@@ -486,7 +486,30 @@
       <h5>Jasmine - Spies</h5>
     </header>
     <ul class="incremental">
-      <li>TBA
+      <li>Can stub any function and tracks calls to it and all arguments
+      <li>Only exist in the describe or it block it is defined, and will be removed after each spec
+    </ul>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Jasmine - Spies</h5>
+    </header>
+    <img src="./images/jasmine-spies.png">
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Mocha, Chai, Sinon vs Jasmine</h5>
+    </header>
+    <ul class="incremental">
+      <li>Very similar API than Jasmine
+      <li>Very good with Asynchronous
+      <li>No spy framework with Mocha (so we can use sinon.js)
+      <li>No assertion framework (so we can use Chai)
+      <li>More flexible but need more configuration
     </ul>
 </section>
 
@@ -513,13 +536,155 @@
     <ul class="incremental">
       <li>Elements panel
       <li>Network panel
-      <li>Source panel
+      <li>Sources panel
       <li>Timeline panel
       <li>Profiles panel
       <li>Ressources panel
       <li>Audit panel
       <li>Console panel
       <li>Emulator
+    </ul>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Debug - Elements panel</h5>
+    </header>
+    <ul class="incremental">
+      <li>Show the DOM
+      <li>Show the CSS applyed or not
+      <li>Live DOM and CSS update
+      <li>show events listeners
+    </ul>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Debug - Elements panel</h5>
+    </header>
+    <img src="./images/debug-elements.png">
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Debug - Network panel</h5>
+    </header>
+    <ul class="incremental">
+      <li>Records information about each network operation in your application
+      <li>detailed timing data, HTTP request and response headers, cookies, WebSocket data
+    </ul>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Debug - Elements panel</h5>
+    </header>
+    <img src="./images/debug-network.png">
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Debug - Sources panel</h5>
+    </header>
+    <ul class="incremental">
+      <li>Will display sources files
+      <li>User can pause scripts execution
+      <li>Execute step by step, into the next function...
+      <li>See scope, call stack, breackpoints...
+    </ul>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Debug - Sources panel</h5>
+    </header>
+    <img src="./images/debug-sources.png">
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Debug - Timeline panel</h5>
+    </header>
+    <ul class="incremental">
+      <li>Lets you record and analyze all the activity in your application as it runs
+      <li>Good for nvestigating perceived performance issues in your application
+    </ul>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Debug - Timeline panel</h5>
+    </header>
+    <img src="./images/debug-timeline.png">
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Debug - Profile panel</h5>
+    </header>
+    <ul class="incremental">
+      <li>Lets you profile the execution time and memory usage of a web app or page
+      <li>The Heap profiler shows memory distribution by your page's JavaScript objects and related DOM nodes
+      <li>The CPU profiler shows where execution time is spent in your page's JavaScript functions
+      <li>The CSS Selector Profiler records the aggregate time spent matching selectors to elements in the DOM tree
+    </ul>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Debug - Ressources panel</h5>
+    </header>
+    <ul class="incremental">
+      <li>Lets you inspect your application's local data sources
+      <li>IndexedDB or Web SQL databases, local and session storage, cookies and Application Cache resources
+    </ul>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Debug - Ressources panel</h5>
+    </header>
+    <img src="./images/debug-ressources.png">
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Debug - Console panel</h5>
+    </header>
+    <ul class="incremental">
+      <li>Log diagnostic information to help debug your web page or application
+      <li>Enter commands that interact with the document and the Chrome DevTools
+    </ul>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Debug - Console panel</h5>
+    </header>
+    <img src="./images/debug-console.png">
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Ressources</h5>
+    </header>
+    <ul class="incremental">
+      <a href="https://developer.chrome.com/devtools">https://developer.chrome.com/devtools</a>
+      <li>
     </ul>
 </section>
 
@@ -1165,68 +1330,12 @@
   }
 
 </script>
-<!-- vim: set fdm=marker: }}} --></h1>
-    <footer>ITT Lunch & Learn Tech Sharing 10/04/2015</footer>
-</section>
 
-<section>
-    <p>Some random text: But I've never been to the moon! You can see how I lived before I met you. Also Zoidberg.
-    I could if you hadn't turned on the light and shut off my stereo.</p>
-</section>
-
-<section>
-    <h3>An incremental list</h3>
-    <ul class="incremental">
-      <li>Item 1
-      <li>Item 2
-      <li>Item 3
-        <ul class="incremental">
-          <li> Item 3.1
-          <li> Item 3.2
-        </ul>
-    </ul>
-    <div role="note">Some notes. They are only visible using onstage shell.</div>
-</section>
-
-<section>
-  <blockquote>
-    Who's brave enough to fly into something we all keep calling a death sphere?
-  </blockquote>
-  <details>
-    <p>In the onstage shell, notes scroll rather than overflow:</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac dui eu est feugiat lacinia sit amet nec leo. Mauris eu ipsum leo. Nulla mi odio, cursus sed sollicitudin non, fringilla id magna. Suspendisse sit amet posuere elit. Maecenas iaculis, turpis a placerat imperdiet, libero lorem feugiat nisi, nec tincidunt diam nibh sit amet massa. Vestibulum quis adipiscing tellus. Maecenas sollicitudin sodales pulvinar. Donec dui ipsum, bibendum facilisis consequat interdum, tempus ut mauris. Aliquam ut dolor nec odio scelerisque bibendum quis in neque. Aliquam dui dui, pulvinar quis fermentum quis, gravida eu augue. Nunc tristique dolor a urna pulvinar bibendum. Curabitur mollis cursus neque, in scelerisque metus porta non. Donec tempor enim in nibh vestibulum et convallis nisi malesuada. Duis ut lectus sed metus venenatis porttitor id pharetra quam. Suspendisse sapien turpis, ornare in molestie et, gravida eget turpis.
-    </p>
-  </details>
-</section>
-
-<section>
-    <h2>Part two</h2>
-</section>
-
-<section>
-    <figure> <!-- Figures are used to display images and videos fullpage -->
-      <img src="http://placekitten.com/g/800/600">
-      <figcaption>An image</figcaption>
-    </figure>
-    <div role="note">Kittens are so cute!</div>
-</section>
-
-<section>
-    <figure> <!-- Videos are automatically played -->
-      <video src="http://videos-cdn.mozilla.net/brand/Mozilla_Firefox_Manifesto_v0.2_640.webm" poster="http://www.mozilla.org/images/about/poster.jpg"></video>
-      <figcaption>A video</figcaption>
-    </figure>
-</section>
-
-<section>
-    <h2>End!</h2>
-</section>
 
 <!-- Your Style -->
 <!-- Define the style of your presentation -->
 
 <!-- Maybe a font from http://www.google.com/webfonts ? -->
-<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
 
 <style>
   html, .view body { background-color: black; counter-reset: slideidx; }
