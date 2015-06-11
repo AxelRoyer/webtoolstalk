@@ -18,6 +18,7 @@
     <h3>Agenda</h3>
     <ul class="incremental">
       <li>Development phase
+      <li>testing phase
       <li>Build phase
       <li>Debuging phase
     </ul>
@@ -33,9 +34,6 @@
       <li>Npm
       <li>SASS
       <li>Bower
-      <li>Jasmine
-      <li>Mocha
-      <li>Sinon
     </ul>
 </section>
 
@@ -109,6 +107,68 @@
             <pre>npm -save install <PACKAGE_NAME></pre>
       </li>    
     </ul>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Bower</h5>
+    </header>
+    <ul class="incremental">
+      <li>Front-end dependencies Manager
+      <li>Bower, unlike npm, can have multiple files (e.g. .js, .css, .html, .png, .ttf) which are considered the main file(s). Bower semantically considers these main files, when packaged together, a component.
+    </ul>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Bower - Bower.json</h5>
+    </header>
+    <h4>Bower.json
+    <img src="images/bowerjson-image.png" alt="bower.json"/>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Bower - How to use</h5>
+    </header>
+    <h4>Install Bower</h4>
+    <pre>npm install bower</pre>
+    <h4>Init Bower</h4>
+    <pre>bower init</pre>
+    <h4>Install package</h4>
+    <pre>bower install PACKAGE</pre>
+    <h4>Install package add it to dependencies</h4>
+    <pre>bower install PACKAGE --save</pre>
+    <h4>Install package add it to dev dependencies</h4>
+    <pre>bower install PACKAGE --save-dev</pre>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Bower - How to use</h5>
+    </header>
+    <h4>Update packages</h4>
+    <pre>bower update</pre>
+    <h4>Update packages</h4>
+    <pre>bower update PACKAGE</pre>
+    <h4>Uninstall package</h4>
+    <pre>bower uninstall PACKAGE</pre>
+    <pre>bower uninstall PACKAGE1 PACKAGE2</pre>
+    <h4>List Package</h4>
+    <pre>bower list</pre>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Bower - How to use</h5>
+    </header>
+    <h4>Use package</h4>
+    <img src="images/bower-use-package.png">
 </section>
 
 <section>
