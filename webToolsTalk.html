@@ -32,8 +32,8 @@
     </header>
     <ul class="incremental">
       <li>Npm
-      <li>SASS
       <li>Bower
+      <li>SASS
     </ul>
 </section>
 
@@ -82,7 +82,7 @@
         <li>version Must match version exactly
         <li>>version Must be greater than version
         <li>>=version etc
-        <li><version
+        <li><pre><version</pre>
         <li><=version
         <li>~version "Approximately equivalent to version"
         <li>^version "Compatible with version"
@@ -182,7 +182,7 @@
       <li>lets you use features that don't exist in CSS yet like variables, nesting, mixins, inheritance
       <li>Big community
       <li>Mixins
-      <li>Dry code
+      <li>Clean code
       <li>Easy to develop and maintain
     </ul>
 </section>
@@ -308,6 +308,188 @@
     </ul>
 </section>
 
+<!-- During the test phase -->
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>During the test phase</h5>
+    </header>
+    <ul class="incremental">
+      <li>Jasmine
+      <li>Mocha
+      <li>Sinon
+    </ul>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Jasmine</h5>
+    </header>
+    <ul class="incremental">
+      <li>BDD framework for testing javascript code
+      <li>does not depend on any other javascript framework
+      <li>does not require a DOM
+    </ul>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Jasmine - tests</h5>
+    </header>
+    <ul class="incremental">
+      <li>A test suite begins with a call to the global Jasmine function describe
+      <li>2 parameters: a string and a function
+      <li>The string is a name or title for a spec suite
+      <li>The function is a block of code that implements the suite.
+    </ul>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Jasmine - tests</h5>
+    </header>
+    <img src="./images/jasmine-tests.png">
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Jasmine - Specs</h5>
+    </header>
+    <ul class="incremental">
+      <li>pecs are defined by calling the global Jasmine function it
+      <li>The string is the title of the spec
+      <li>The function is the spec, or test
+      <li>A spec contains one or more expectations that test the state of the code
+    </ul>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Jasmine - Specs</h5>
+    </header>
+    <img src="./images/jasmine-specs.png">
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Jasmine - it's just function</h5>
+    </header>
+    <ul class="incremental">
+      <li>Describe and it blocks are functions
+      <li>They can contain any executable code necessary to implement the test
+      <li>JavaScript scoping rules apply: variables declared in a describe are available to any it block inside the suite.
+    </ul>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Jasmine - features</h5>
+    </header>
+    <img src="./images/jasmine-features-1.png">
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Jasmine - features</h5>
+    </header>
+    <img src="./images/jasmine-features-2.png">
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Jasmine - features</h5>
+    </header>
+    <img src="./images/jasmine-features-3.png">
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Jasmine - features</h5>
+    </header>
+    <img src="./images/jasmine-features-4.png">
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Jasmine - features</h5>
+    </header>
+    <img src="./images/jasmine-features-5.png">
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Jasmine - features</h5>
+    </header>
+    <img src="./images/jasmine-features-6.png">
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Jasmine - Grouping related specs</h5>
+    </header>
+    <img src="./images/jasmine-grouping.png">
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Jasmine - Nesting</h5>
+    </header>
+    <img src="./images/jasmine-nesting.png">
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Jasmine - setup and teardown code</h5>
+    </header>
+    <ul class="incremental">
+      <li>BeforeEach function is called once before each spec in the describe is run
+      <li>AfterEach function is called once after each spec
+      <li>beforeAll function is called only once before all the specs in describe are run
+      <li>afterAll function is called after all specs finish
+    </ul>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Jasmine - setup and teardown code</h5>
+    </header>
+    <img src="./images/jasmine-setup-1.png">
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Jasmine - setop and teardown code</h5>
+    </header>
+    <img src="./images/jasmine-setup-2.png">
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Jasmine - Spies</h5>
+    </header>
+    <ul class="incremental">
+      <li>TBA
+    </ul>
+</section>
+
 <!-- During the build phase -->
 <section>
     <header>
@@ -322,6 +504,7 @@
     </ul>
 </section>
 
+<!-- During the Debug phase -->
 <section>
     <header>
     	<h4>Development tools</h4>
