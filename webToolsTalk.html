@@ -20,7 +20,7 @@
       <li>Development phase
       <li>Testing phase
       <li>Build phase
-      <li>Debuging phase
+      <li>Debugging phase
     </ul>
 </section>
 
@@ -93,15 +93,39 @@
     </header>
     <ul class="incremental">
       <li>Init
-          <pre>npm install</pre>
+          <pre>npm init</pre>
           <div>This will ask you a bunch of questions, and then write a package.json for you.</div>
       </li>
-      <li>Install package locally
+      <li>Install all dependencies in package.json
+            <pre>npm install</pre>
+      </li>
+      <li>Install all dev dependencies in package.json
+            <pre>npm install --dev</pre>
+      </li>
+      <li>Install local package
             <pre>npm install PACKAGE_NAME</pre>
-      </li>        
+      </li>
+    </ul>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>NPM - How to use it ?</h5>
+    </header>
+    <ul class="incremental">
+      <li>Install global package
+            <pre>npm install -g PACKAGE_NAME</pre>
+      </li>
       <li>Install package locally and save it
             <pre>npm -save install <PACKAGE_NAME></pre>
-      </li>    
+      </li>
+      <li>List global packages
+            <pre>npm ls</pre>
+      </li>
+      <li>Update packages
+            <pre>npm update</pre>
+      </li>   
     </ul>
 </section>
 
@@ -382,7 +406,7 @@
       <h5>Jasmine - Specs</h5>
     </header>
     <ul class="incremental">
-      <li>Specs are defined by calling the global Jasmine function it
+      <li>Specs are defined by calling the global Jasmine function "it"
       <li>The string is the title of the spec
       <li>The function is the spec, or test
       <li>A spec contains one or more expectations that test the state of the code
@@ -395,16 +419,16 @@
       <h5>Jasmine - it's just function</h5>
     </header>
     <ul class="incremental">
-      <li>Describe and it blocks are functions
+      <li>"describe" and "it" blocks are functions
       <li>They can contain any executable code necessary to implement the test
-      <li>JavaScript scoping rules apply: variables declared in a describe are available to any it block inside the suite.
+      <li>JavaScript scoping rules apply: variables declared in a "describe" are available to any "it" block inside the suite.
     </ul>
 </section>
 
 <section>
     <header>
       <h4>Development tools</h4>
-      <h5>Jasmine - features - Comparaison</h5>
+      <h5>Jasmine - features - Comparison</h5>
     </header>
     <img src="./images/jasmine-features-1.png">
 </section>
@@ -685,7 +709,7 @@
     <ul class="incremental">
       <li>Complexity of JavaScript applications increased since few years
       <li>Developers need powerful debugging tools to help quickly discover the cause of an issue and fix it efficiently
-      <li>Brower dev tools are available by pressiong F12 (cmd + MAJ + I on mac)
+      <li>Browser dev tools are available by pressing F12 (cmd + MAJ + I on mac)
       <li>Lof of addons / pluggins are available on internet
     </ul>
 </section>
@@ -701,7 +725,7 @@
       <li>Sources panel
       <li>Timeline panel
       <li>Profiles panel
-      <li>Ressources panel
+      <li>Resources panel
       <li>Console panel
       <li>Emulator
     </ul>
@@ -775,7 +799,7 @@
     </header>
     <ul class="incremental">
       <li>Lets you record and analyze all the activity in your application as it runs</li>
-      <li>Good for nvestigating perceived performance issues in your application</li>
+      <li>Good for investigating perceived performance issues in your application</li>
       <li><img src="./images/debug-timeline-colors.png"></li>
     </ul>
 </section>
@@ -804,7 +828,7 @@
 <section>
     <header>
       <h4>Development tools</h4>
-      <h5>Debug - Ressources panel</h5>
+      <h5>Debug - Resources panel</h5>
     </header>
     <ul class="incremental">
       <li>Lets you inspect your application's local data sources
@@ -815,7 +839,7 @@
 <section>
     <header>
       <h4>Development tools</h4>
-      <h5>Debug - Ressources panel</h5>
+      <h5>Debug - Resources panel</h5>
     </header>
     <img src="./images/debug-ressources.png">
 </section>
@@ -842,7 +866,7 @@
 <section>
     <header>
       <h4>Development tools</h4>
-      <h5>Ressources</h5>
+      <h5>Resources</h5>
     </header>
     <ul class="incremental">
       <li><a href="http://sass-lang.com/">http://sass-lang.com/</a>
