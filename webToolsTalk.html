@@ -18,7 +18,7 @@
     <h3>Agenda</h3>
     <ul class="incremental">
       <li>Development phase
-      <li>testing phase
+      <li>Testing phase
       <li>Build phase
       <li>Debuging phase
     </ul>
@@ -45,7 +45,7 @@
     <ul class="incremental">
       <li>Package Manager for Javascript
       <li>Can manage dependencies and versions
-      <li>ships with node.js
+      <li>Ships with node.js
       <li>Makes it easy for JavaScript developers to share and reuse code
       <li>Makes it easy to update the code that you're sharing
     </ul>
@@ -61,7 +61,7 @@
       <div class="comments">
           <ul class="incremental">
             <li>Name: The unique name of your package. Required
-            <li>Scripts: A object which exposes addition npm commands. The object assumes that the key is the npm command and the value is the script path
+            <li>Scripts: A object which exposes addition npm commands.
             <li>Main: The main entry point to your package. When calling require('{module name}')
             <li>Dependencies: An object which contain the dependencies of your package
             <li>devDependencies: These are the dependencies that are only intended for development and testing of your module
@@ -77,13 +77,12 @@
       <h5>NPM - package.json dependencies</h5>
     </header>
     <ul class="incremental">
-        <li>version Must match version exactly
-        <li>>version Must be greater than version
-        <li>>=version etc
-        <li><pre><version</pre>
-        <li><=version
-        <li>~version "Approximately equivalent to version"
-        <li>^version "Compatible with version"
+        <li><span class="highlight">1.2.1</span>Must match version exactly
+        <li><span class="highlight">>1.2.1</span>Must be greater than version
+        <li><span class="highlight">>=1.2.1</span>Must be greater or equal than version
+        <li><span class="highlight"><1.2.1</span>Must be lower than version
+        <li><span class="highlight"><=1.2.1</span>Must be lower or equal than version
+        <li><span class="highlight">^1.2.1</span>Must be a compatible with version
     </ul>
 </section>
 
@@ -113,7 +112,8 @@
     </header>
     <ul class="incremental">
       <li>Front-end dependencies Manager
-      <li>Bower, unlike npm, can have multiple files (e.g. .js, .css, .html, .png, .ttf) which are considered the main file(s). Bower semantically considers these main files, when packaged together, a component.
+      <li>Bower, unlike npm, can have multiple files (e.g. .js, .css, .html, .png, .ttf) which are considered the main file(s).
+      <li>Bower semantically considers these main files, when packaged together, a component.
     </ul>
 </section>
 
@@ -122,7 +122,6 @@
       <h4>Development tools</h4>
       <h5>Bower - Bower.json</h5>
     </header>
-    <h4>Bower.json
     <img src="images/bowerjson-image.png" alt="bower.json"/>
 </section>
 
@@ -162,9 +161,6 @@
       <li>Update 1 package
           <pre>bower update PACKAGE</pre>
       </li>        
-      <li>Install package
-          <pre>bower install PACKAGE_NAME</pre>
-      </li>
       <li>Uninstall package
           <pre>bower uninstall PACKAGE1 PACKAGE2</pre>
       </li>
@@ -279,7 +275,9 @@
       <h5>SASS - Inheritance</h5>
     </header>
     <h5>Syntax</h5>
-    <img src="./images/sass-inheritence-syntax.png">
+    <div class="scrollable fullwidth">
+      <img src="./images/sass-inheritence-syntax.png">
+    </div>
 </section>
 
 <section>
@@ -339,22 +337,9 @@
       <h5>Jasmine</h5>
     </header>
     <ul class="incremental">
-      <li>BDD framework for testing javascript code
-      <li>does not depend on any other javascript framework
-      <li>does not require a DOM
-    </ul>
-</section>
-
-<section>
-    <header>
-      <h4>Development tools</h4>
-      <h5>Jasmine - tests</h5>
-    </header>
-    <ul class="incremental">
-      <li>A test suite begins with a call to the global Jasmine function describe
-      <li>2 parameters: a string and a function
-      <li>The string is a name or title for a spec suite
-      <li>The function is a block of code that implements the suite.
+      <li>Framework for testing javascript code
+      <li>Does not depend on any other javascript framework
+      <li>Does not require a DOM
     </ul>
 </section>
 
@@ -364,6 +349,31 @@
       <h5>Jasmine - tests</h5>
     </header>
     <img src="./images/jasmine-tests.png">
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Jasmine - tests</h5>
+    </header>
+    <ul class="incremental">
+      <li>A test suite begins with a call to the global Jasmine function describe</li>
+      <li>2 parameters: a string and a function</li>
+      <li>
+        <ul>
+          <li>The string is a name or title for a spec suite
+          <li>The function is a block of code that implements the suite.
+        </ul>
+      </li>
+    </ul>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Jasmine - Specs</h5>
+    </header>
+    <img src="./images/jasmine-specs.png">
 </section>
 
 <section>
@@ -382,14 +392,6 @@
 <section>
     <header>
       <h4>Development tools</h4>
-      <h5>Jasmine - Specs</h5>
-    </header>
-    <img src="./images/jasmine-specs.png">
-</section>
-
-<section>
-    <header>
-      <h4>Development tools</h4>
       <h5>Jasmine - it's just function</h5>
     </header>
     <ul class="incremental">
@@ -402,7 +404,7 @@
 <section>
     <header>
       <h4>Development tools</h4>
-      <h5>Jasmine - features</h5>
+      <h5>Jasmine - features - Comparaison</h5>
     </header>
     <img src="./images/jasmine-features-1.png">
 </section>
@@ -410,7 +412,7 @@
 <section>
     <header>
       <h4>Development tools</h4>
-      <h5>Jasmine - features</h5>
+      <h5>Jasmine - features - Equality</h5>
     </header>
     <img src="./images/jasmine-features-2.png">
 </section>
@@ -418,7 +420,7 @@
 <section>
     <header>
       <h4>Development tools</h4>
-      <h5>Jasmine - features</h5>
+      <h5>Jasmine - features - Defined and null</h5>
     </header>
     <img src="./images/jasmine-features-3.png">
 </section>
@@ -426,7 +428,7 @@
 <section>
     <header>
       <h4>Development tools</h4>
-      <h5>Jasmine - features</h5>
+      <h5>Jasmine - features - Booleen and contain</h5>
     </header>
     <img src="./images/jasmine-features-4.png">
 </section>
@@ -434,7 +436,7 @@
 <section>
     <header>
       <h4>Development tools</h4>
-      <h5>Jasmine - features</h5>
+      <h5>Jasmine - features - Number comparaison</h5>
     </header>
     <img src="./images/jasmine-features-5.png">
 </section>
@@ -442,7 +444,7 @@
 <section>
     <header>
       <h4>Development tools</h4>
-      <h5>Jasmine - features</h5>
+      <h5>Jasmine - features - Errors</h5>
     </header>
     <img src="./images/jasmine-features-6.png">
 </section>
@@ -460,7 +462,9 @@
       <h4>Development tools</h4>
       <h5>Jasmine - Nesting</h5>
     </header>
-    <img src="./images/jasmine-nesting.png">
+    <div class="scrollable fullwidth">
+      <img src="./images/jasmine-nesting.png">
+    </div>
 </section>
 
 <section>
@@ -469,10 +473,10 @@
       <h5>Jasmine - setup and teardown code</h5>
     </header>
     <ul class="incremental">
-      <li>BeforeEach function is called once before each spec in the describe is run
-      <li>AfterEach function is called once after each spec
-      <li>beforeAll function is called only once before all the specs in describe are run
-      <li>afterAll function is called after all specs finish
+      <li><span class="highlight">BeforeEach</span> called once before each spec in the describe is run
+      <li><span class="highlight">AfterEach</span> called once after each spec
+      <li><span class="highlight">BeforeAll</span> called only once before all the specs in describe are run
+      <li><span class="highlight">AfterAll</span> called after all specs finish
     </ul>
 </section>
 
@@ -508,13 +512,15 @@
       <h4>Development tools</h4>
       <h5>Jasmine - Spies</h5>
     </header>
-    <img src="./images/jasmine-spies.png">
+    <div class="scrollable fullwidth">
+      <img src="./images/jasmine-spies.png">
+    </div>
 </section>
 
 <section>
     <header>
       <h4>Development tools</h4>
-      <h5>Mocha, Chai, Sinon vs Jasmine</h5>
+      <h5>(Mocha, Chai, Sinon) vs Jasmine</h5>
     </header>
     <ul class="incremental">
       <li>Very similar API than Jasmine
@@ -532,14 +538,158 @@
     	<h5>During the Build phase</h5>
     </header>
     <ul class="incremental">
-      <li>browserify
-      <li>gulp
+      <li>Gulp
+      <li>Plugins examples
       <li>Grunt
-      <li>Connection with CI
+    </ul>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Gulp - why ?</h5>
+    </header>
+    <ul class="incremental">
+      <li>Enable gzip compression
+      <li>Switching to an appropriate image format
+      <li>Removing unnecessary fonts
+      <li>Removing console and debugger statements from scripts
+      <li>Concatenating and minifying CSS and JavaScript files
+      <li>Deploying updates to a production server
+      <li>==> Task runner
+    </ul>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Gulp - how does it work ?</h5>
+    </header>
+    <img src="./images/build-gulp-streams.png"/>
+    <p>Most important Gulp concept is streams</p>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Gulp - how to use it ?</h5>
+    </header>
+    <ul class="incremental">
+      <li>Install Gulp
+          <pre>npm install gulp</pre>
+      </li>
+      <li>Install gulp in your project devDependencies
+          <pre>npm install --save-dev gulp</pre>
+      </li>
+      <li>Install plugin
+          <pre>npm install gulp-jshint --save-dev</pre>
+      </li>        
+      <li>Create a gulpfile.js at the root of your project 
+    </ul>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Gulp - how to use it ?</h5>
+    </header>
+      <div class="item-margin">Create a task</div>
+      <pre>gulp.task('somename', function() {
+  // Do stuff
+});
+</pre>
+      <div class="item-margin">Create a task with dependencies (will be executed and completed before the task</div>
+      <pre>gulp.task('mytask', ['array', 'of', 'task', 'names'], function() {
+  // Do stuff
+});
+</pre>
+      <div class="item-margin">Emits files matching</div>
+      <pre>gulp.src('client/templates/*.jade')
+  .pipe(jade())
+  .pipe(minify())
+  .pipe(gulp.dest('build/minified_templates'));
+</pre>
+      <div class="item-margin">Write files</div>
+      <pre>gulp.src('./client/templates/*.jade')
+  .pipe(jade())
+  .pipe(gulp.dest('./build/templates'))
+  .pipe(minify())
+  .pipe(gulp.dest('./build/minified_templates'));
+</pre>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Gulp - how to use it ?</h5>
+    </header>
+      <div class="item-margin">Watch files for changes</div>
+      <pre>gulp.watch('js/**/*.js', function(event) {
+  console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+});
+</pre>
+
+      <div class="item-margin">Run a specific task</div>
+      <pre>gulp TASK_NAME
+</pre>
+
+      <div class="item-margin">Run default task</div>
+      <pre>gulp
+</pre>
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Gulp - how to use it ?</h5>
+    </header>
+    <img src="./images/gulp-sample.png">
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Gulp - how to use it ?</h5>
+    </header>
+    <img src="./images/gulp-sample-2.png">
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Gulp - how to use it ?</h5>
+    </header>
+    <img src="./images/gulp-sample-3.png">
+</section>
+
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Gulp vs Grunt</h5>
+    </header>
+    <ul class="incremental">
+      <li>Grunt and Gulp do exactly the same thing
+      <li>Gulp has been developed to solve issues you may have encountered with Grunt
+      <li>Grunt requires plug-ins for basic functionality such as file watching (built-in for Gulp)
+      <li>Grunt uses JSON-like data configuration files (plain JS for Gulp)
+      <li>lot of add-ons and plugins for both
     </ul>
 </section>
 
 <!-- During the Debug phase -->
+<section>
+    <header>
+      <h4>Development tools</h4>
+      <h5>Debug</h5>
+    </header>
+    <ul class="incremental">
+      <li>Complexity of JavaScript applications increased since few years
+      <li>Developers need powerful debugging tools to help quickly discover the cause of an issue and fix it efficiently
+      <li>Brower dev tools are available by pressiong F12 (cmd + MAJ + I on mac)
+      <li>Lof of addons / pluggins are available on internet
+    </ul>
+</section>
+
 <section>
     <header>
     	<h4>Development tools</h4>
@@ -624,8 +774,9 @@
       <h5>Debug - Timeline panel</h5>
     </header>
     <ul class="incremental">
-      <li>Lets you record and analyze all the activity in your application as it runs
-      <li>Good for nvestigating perceived performance issues in your application
+      <li>Lets you record and analyze all the activity in your application as it runs</li>
+      <li>Good for nvestigating perceived performance issues in your application</li>
+      <li><img src="./images/debug-timeline-colors.png"></li>
     </ul>
 </section>
 
@@ -836,28 +987,6 @@
     background: red;
     z-index: 1000;
   }
-
-  .scrollable {
-      height: 450px;
-      overflow-y: auto;
-  }
-
-  .scrollable  img {
-      width: calc(100% - 300px);
-      float: left;
-  }
-
-  .scrollable  .comments {
-      width: 300px;
-      display: inline-block;
-      height: 100%;
-      font-size: 1.2rem;
-  }
-
-  .scrollable  .comments ul {
-      margin: 2rem;
-      padding: 0;
-  }
 </style>
 
 <!-- {{{{ dzslides core
@@ -988,6 +1117,46 @@
     width: 80%;
     margin-top: 1rem;
     margin-left: 10%;
+  }
+
+  .scrollable {
+      height: 450px;
+      overflow-y: auto;
+  }
+
+  .scrollable  img {
+      width: calc(100% - 300px);
+      float: left;
+      margin-top: 0;
+      margin-left: 0;
+  }
+
+  .scrollable  .comments {
+      width: 300px;
+      display: inline-block;
+      height: 100%;
+      font-size: 1.2rem;
+  }
+
+  .scrollable  .comments ul {
+      margin: 2rem;
+      padding: 0;
+  }
+
+  .scrollable.fullwidth {
+    width: 100%;
+  }
+
+  .scrollable.fullwidth img {
+    width: 100%;
+  }
+
+  .highlight {
+      color: red;
+  }
+
+  .item-margin {
+    margin-top: 1rem;
   }
 </style>
 
